@@ -51,6 +51,8 @@ if(isset($_FILES) && !empty($_FILES)) {
         }
     }
 }
+
+// delete image
     if (isset($_POST['name'])) {
         unlink('upload/' . $_POST['name']);
         header('Location : form.php');
